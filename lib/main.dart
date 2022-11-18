@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:new_app/home_screen.dart';
+import 'package:new_app/Components/cellGrid.dart';
+import 'package:new_app/Screens/Signup.dart';
+import 'package:new_app/Screens/home_screen.dart';
 
-import 'Inscription.dart';
-import 'details.dart';
+import 'Screens/Inscription.dart';
+import 'Screens/details.dart';
+import 'Screens/home_screen_grid.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,8 +24,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.pink,
 
       ),
-      //home: const MyHomePage(title: 'Flutter Demo Home Page'),
-       home: const Inscription() ,
+       home:  home_screen_grid() ,
     );
   }
 }

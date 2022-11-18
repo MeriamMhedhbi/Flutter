@@ -6,7 +6,9 @@ class Inscription extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Inscription"),),
+      //to remove the keyboard overflow
+        resizeToAvoidBottomInset: false,
+        appBar: AppBar(title: Text("Inscription"),),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Column(
@@ -33,7 +35,7 @@ class Inscription extends StatelessWidget {
               hintText: "Email",
             ),),
 
-            TextField(decoration: InputDecoration(
+            TextField(obscureText: true,decoration: InputDecoration(
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),
                 borderSide: BorderSide(
